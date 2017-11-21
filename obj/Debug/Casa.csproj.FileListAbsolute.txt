@@ -1,0 +1,71 @@
+C:\Users\pedro\Desktop\Casa\Casa\bin\Debug\Casa.exe.config
+C:\Users\pedro\Desktop\Casa\Casa\bin\Debug\Casa.exe
+C:\Users\pedro\Desktop\Casa\Casa\bin\Debug\Casa.pdb
+C:\Users\pedro\Desktop\Casa\Casa\bin\Debug\OpenTK.Compatibility.dll
+C:\Users\pedro\Desktop\Casa\Casa\bin\Debug\OpenTK.dll
+C:\Users\pedro\Desktop\Casa\Casa\bin\Debug\OpenTK.GLControl.dll
+C:\Users\pedro\Desktop\Casa\Casa\bin\Debug\OpenTK.pdb
+C:\Users\pedro\Desktop\Casa\Casa\bin\Debug\OpenTK.xml
+C:\Users\pedro\Desktop\Casa\Casa\bin\Debug\OpenTK.GLControl.xml
+C:\Users\pedro\Desktop\Casa\Casa\obj\Debug\Casa.csprojResolveAssemblyReference.cache
+C:\Users\pedro\Desktop\Casa\Casa\obj\Debug\Casa.Form1.resources
+C:\Users\pedro\Desktop\Casa\Casa\obj\Debug\Casa.Properties.Resources.resources
+C:\Users\pedro\Desktop\Casa\Casa\obj\Debug\Casa.csproj.GenerateResource.Cache
+C:\Users\pedro\Desktop\Casa\Casa\obj\Debug\Casa.exe
+C:\Users\pedro\Desktop\Casa\Casa\obj\Debug\Casa.pdb
+D:\Faculdade\Trabalhos Prontos\Casa\Casa\bin\Debug\Casa.exe.config
+D:\Faculdade\Trabalhos Prontos\Casa\Casa\obj\Debug\Casa.exe
+D:\Faculdade\Trabalhos Prontos\Casa\Casa\obj\Debug\Casa.pdb
+D:\Faculdade\Trabalhos Prontos\Casa\Casa\bin\Debug\Casa.exe
+D:\Faculdade\Trabalhos Prontos\Casa\Casa\bin\Debug\Casa.pdb
+D:\Faculdade\Trabalhos Prontos\Casa\Casa\bin\Debug\OpenTK.pdb
+D:\Faculdade\Trabalhos Prontos\Casa\Casa\bin\Debug\OpenTK.xml
+D:\Faculdade\Trabalhos Prontos\Casa\Casa\bin\Debug\OpenTK.GLControl.xml
+D:\Faculdade\Trabalhos Prontos\Casa\Casa\obj\Debug\Casa.csprojResolveAssemblyReference.cache
+D:\Faculdade\Trabalhos Prontos\Casa\Casa\obj\Debug\Casa.Form1.resources
+D:\Faculdade\Trabalhos Prontos\Casa\Casa\obj\Debug\Casa.Properties.Resources.resources
+D:\Faculdade\Trabalhos Prontos\Casa\Casa\obj\Debug\Casa.csproj.GenerateResource.Cache
+C:\Users\Nucci Calçados\Desktop\CASA\Casa\bin\Debug\Casa.exe.config
+C:\Users\Nucci Calçados\Desktop\CASA\Casa\bin\Debug\Casa.exe
+C:\Users\Nucci Calçados\Desktop\CASA\Casa\bin\Debug\Casa.pdb
+C:\Users\Nucci Calçados\Desktop\CASA\Casa\bin\Debug\OpenTK.Compatibility.dll
+C:\Users\Nucci Calçados\Desktop\CASA\Casa\bin\Debug\OpenTK.dll
+C:\Users\Nucci Calçados\Desktop\CASA\Casa\bin\Debug\OpenTK.GLControl.dll
+C:\Users\Nucci Calçados\Desktop\CASA\Casa\bin\Debug\OpenTK.pdb
+C:\Users\Nucci Calçados\Desktop\CASA\Casa\bin\Debug\OpenTK.xml
+C:\Users\Nucci Calçados\Desktop\CASA\Casa\bin\Debug\OpenTK.dll.config
+C:\Users\Nucci Calçados\Desktop\CASA\Casa\bin\Debug\OpenTK.Compatibility.dll.config
+C:\Users\Nucci Calçados\Desktop\CASA\Casa\bin\Debug\OpenTK.GLControl.xml
+C:\Users\Nucci Calçados\Desktop\CASA\Casa\obj\Debug\Casa.csprojResolveAssemblyReference.cache
+C:\Users\Nucci Calçados\Desktop\CASA\Casa\obj\Debug\Casa.Form1.resources
+C:\Users\Nucci Calçados\Desktop\CASA\Casa\obj\Debug\Casa.Properties.Resources.resources
+C:\Users\Nucci Calçados\Desktop\CASA\Casa\obj\Debug\Casa.csproj.GenerateResource.Cache
+C:\Users\Nucci Calçados\Desktop\CASA\Casa\obj\Debug\Casa.exe
+C:\Users\Nucci Calçados\Desktop\CASA\Casa\obj\Debug\Casa.pdb
+C:\Users\VICCIOLI\Downloads\Casa\Casa\bin\Debug\Casa.exe.config
+C:\Users\VICCIOLI\Downloads\Casa\Casa\obj\Debug\Casa.exe
+C:\Users\VICCIOLI\Downloads\Casa\Casa\obj\Debug\Casa.pdb
+C:\Users\VICCIOLI\Downloads\Casa\Casa\bin\Debug\Casa.exe
+C:\Users\VICCIOLI\Downloads\Casa\Casa\bin\Debug\Casa.pdb
+C:\Users\VICCIOLI\Downloads\Casa\Casa\bin\Debug\OpenTK.Compatibility.dll
+C:\Users\VICCIOLI\Downloads\Casa\Casa\bin\Debug\OpenTK.dll
+C:\Users\VICCIOLI\Downloads\Casa\Casa\bin\Debug\OpenTK.GLControl.dll
+C:\Users\VICCIOLI\Downloads\Casa\Casa\bin\Debug\OpenTK.pdb
+C:\Users\VICCIOLI\Downloads\Casa\Casa\bin\Debug\OpenTK.xml
+C:\Users\VICCIOLI\Downloads\Casa\Casa\bin\Debug\OpenTK.GLControl.xml
+C:\Users\VICCIOLI\Downloads\Casa\Casa\obj\Debug\Casa.csprojResolveAssemblyReference.cache
+C:\Users\VICCIOLI\Downloads\Casa\Casa\obj\Debug\Casa.Form1.resources
+C:\Users\VICCIOLI\Downloads\Casa\Casa\obj\Debug\Casa.Properties.Resources.resources
+C:\Users\VICCIOLI\Downloads\Casa\Casa\obj\Debug\Casa.csproj.GenerateResource.Cache
+C:\Users\VICCIOLI\Desktop\Casa\Casa\bin\Debug\Casa.exe.config
+C:\Users\VICCIOLI\Desktop\Casa\Casa\obj\Debug\Casa.exe
+C:\Users\VICCIOLI\Desktop\Casa\Casa\obj\Debug\Casa.pdb
+C:\Users\VICCIOLI\Desktop\Casa\Casa\bin\Debug\Casa.exe
+C:\Users\VICCIOLI\Desktop\Casa\Casa\bin\Debug\Casa.pdb
+C:\Users\VICCIOLI\Desktop\Casa\Casa\bin\Debug\OpenTK.pdb
+C:\Users\VICCIOLI\Desktop\Casa\Casa\bin\Debug\OpenTK.xml
+C:\Users\VICCIOLI\Desktop\Casa\Casa\bin\Debug\OpenTK.GLControl.xml
+C:\Users\VICCIOLI\Desktop\Casa\Casa\obj\Debug\Casa.csprojResolveAssemblyReference.cache
+C:\Users\VICCIOLI\Desktop\Casa\Casa\obj\Debug\Casa.Form1.resources
+C:\Users\VICCIOLI\Desktop\Casa\Casa\obj\Debug\Casa.Properties.Resources.resources
+C:\Users\VICCIOLI\Desktop\Casa\Casa\obj\Debug\Casa.csproj.GenerateResource.Cache

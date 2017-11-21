@@ -1,0 +1,14 @@
+C:\Users\pedro\Desktop\Casa\Casa\bin\Release\Casa.exe.config
+C:\Users\pedro\Desktop\Casa\Casa\obj\Release\Casa.Form1.resources
+C:\Users\pedro\Desktop\Casa\Casa\obj\Release\Casa.Properties.Resources.resources
+C:\Users\pedro\Desktop\Casa\Casa\obj\Release\Casa.csproj.GenerateResource.Cache
+C:\Users\pedro\Desktop\Casa\Casa\bin\Release\Casa.exe
+C:\Users\pedro\Desktop\Casa\Casa\bin\Release\Casa.pdb
+C:\Users\pedro\Desktop\Casa\Casa\bin\Release\OpenTK.Compatibility.dll
+C:\Users\pedro\Desktop\Casa\Casa\bin\Release\OpenTK.dll
+C:\Users\pedro\Desktop\Casa\Casa\bin\Release\OpenTK.GLControl.dll
+C:\Users\pedro\Desktop\Casa\Casa\bin\Release\OpenTK.pdb
+C:\Users\pedro\Desktop\Casa\Casa\bin\Release\OpenTK.xml
+C:\Users\pedro\Desktop\Casa\Casa\bin\Release\OpenTK.GLControl.xml
+C:\Users\pedro\Desktop\Casa\Casa\obj\Release\Casa.exe
+C:\Users\pedro\Desktop\Casa\Casa\obj\Release\Casa.pdb
