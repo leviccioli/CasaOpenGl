@@ -284,21 +284,24 @@ namespace Casa
             
             
             //Parede Direita
-            estruturar.verticaly(1050, 800, 0, 1800, 150, Color.Brown);
+            estruturar.verticaly(1050, 800, 0, 730, 150, Color.Brown);
+            estruturar.verticaly(1050, 1670, 0, 400, 150, Color.Brown);
+            estruturar.verticaly(1050, 2220, 0, 260, 150, Color.Brown);
+            estruturar.verticaly(1050, 2560, 0, 40, 150, Color.Brown);
+            estruturar.verticaly(1050, 2460, 130, 100, 20, Color.Brown);
+            estruturar.verticaly(1050, 2460, 0, 100, 80, Color.Brown);
+            estruturar.verticaly(1050, 2060, 0, 180, 60, Color.Brown);
+            estruturar.verticaly(1050, 2060, 140, 180, 10, Color.Brown);
+            estruturar.verticaly(1050, 1490, 0, 180, 60, Color.Brown);
+            estruturar.verticaly(1050, 1490, 140, 180, 10, Color.Brown);
 
             //PAREDE FECHAMENTO DA CASA - SAÍDA PARA QUINTAL FUNDOS
-            GL.Enable(EnableCap.Texture2D);
-            GL.BindTexture(TextureTarget.Texture2D, textParede);
-            GL.Enable(EnableCap.Blend);
-            GL.BlendFunc(BlendingFactorSrc.SrcAlpha, BlendingFactorDest.OneMinusSrcAlpha);
-
             estruturar.verticalx(1050, 2600, 0, -400, 150, Color.Blue);
             estruturar.verticalx(470, 2600, 0, -320, 150, Color.Blue);
             estruturar.verticalx(650, 2600, 0, -80, 150, Color.Blue);
             estruturar.verticalx(570, 2600, 130, -100, 20, Color.Blue);
 
-            GL.Disable(EnableCap.Blend);
-            GL.Disable(EnableCap.Texture2D);
+           
 
             //estruturar.verticalx(1050, 2600, 0, -900, 150, Color.Blue);
 
@@ -316,6 +319,8 @@ namespace Casa
             
             //PAREDE COPA E COZINHA
             estruturar.verticalx(150, 2100, 0, 350, 150, Color.Olive);
+            estruturar.verticalx(500, 2100, 130, 125, 20, Color.Olive);
+            estruturar.verticalx(590, 2100, 0, 35, 150, Color.Olive);
 
             
 
@@ -331,9 +336,15 @@ namespace Casa
             estruturar.verticaly(625, 1405, 0, -110, 150, Color.Lime);
             estruturar.verticaly(730, 1770, 0, -420, 150, Color.Lime);
             estruturar.verticaly(730, 1880, 0, -20, 150, Color.Lime);
+            estruturar.verticaly(730, 1870, 130, -100, 20, Color.Lime);
             estruturar.verticalx(720, 1880, 0, 330, 150, Color.Black);//PORTA
+            estruturar.verticalx(630, 1880, 130, 100, 20, Color.Black);
+            estruturar.verticalx(625, 1880, 0, 20, 150, Color.Black);
 
             //PAREDE DA SALA C/ PORTA
+            estruturar.verticalx(590, 1340, 0, 35, 150, Color.Olive);
+            estruturar.verticalx(500, 1340, 0, 20, 150, Color.Olive);
+            estruturar.verticalx(500, 1340, 130, 90, 20, Color.Olive);
             estruturar.verticalx(750, 800, 0, 300, 150, Color.Olive); 
             estruturar.verticalx(625, 800, 0, 30, 150, Color.Olive); 
             estruturar.verticalx(650, 800, 130, 120, 20, Color.Olive); 
@@ -344,7 +355,8 @@ namespace Casa
 
             //PAREDE SUÍTE E BANHEIRO 
             estruturar.verticalx(710, 2450, 0, 335, 150, Color.Olive);
-            estruturar.verticalx(630, 2450, 130, 110, 20, Color.Olive);
+            estruturar.verticalx(625, 2450, 130, 100, 20, Color.Olive);
+            estruturar.verticalx(625, 2450, 0, 10, 150, Color.Olive);
 
             //PAREDE C/ PORTA CORREDOR DIREITO
             estruturar.verticalx(1050, 800, 0, 30, 150, Color.DarkViolet);
@@ -361,7 +373,15 @@ namespace Casa
 
                    
             //CHAO
-            estruturar.horizontal(0, 0, 0, 1200, 3200, Color.Gray);
+            estruturar.horizontal(150, 500, 0, 480, 500, Color.Gray);
+            estruturar.horizontal(150, 800, 0, 900, 1800, Color.Gray);
+            estruturar.horizontal(0, 500, 0, 150, 2400, Color.FloralWhite);
+            estruturar.horizontal(1050, 800, 0, 150, 2100, Color.FloralWhite);
+            estruturar.horizontal(150, 2600, 0, 900, 300, Color.FloralWhite);
+
+            estruturar.horizontal(0, 0, 0, 620, 500, Color.Green);
+            estruturar.horizontal(620, 0, 0, 580, 800, Color.Gray);
+            
         
         }
     }
