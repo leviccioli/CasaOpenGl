@@ -23,23 +23,13 @@ namespace Casa
         float camera_rotation = 0;                     //rotação no eixo Z
         float camera_rotation2 = 0;
         float valor = 0f;
-        int parede2;
-        int porta3;
-        int parede3;
-        int chao;
-        int pedras;
-        int pedras2;
-        int grama;
-        int pedrisco;
-        int porta;
-        int porta2;
-        int janela;
-        int telhado;
+        int parede2, parede3;
+        int porta3, porta, porta2;
+        int chao, grama, pedrisco;
+        int pedras, pedras2;
+        int janela, janela2, janela3;
         int portao;
-        int janela2;
-        int janela3;
-        int telhado2, telhado3, telhado4;
-        int forro;
+        int telhado, telhado2, telhado3, telhado4, forro;
 
 
         public Form1()
@@ -314,7 +304,7 @@ namespace Casa
             
             
             
-            //Parede Direita
+            //Parede Direita da casa
             estruturar.verticaly(1050, 800, 0, 730, 150, parede3);
             estruturar.verticaly(1050, 1670, 0, 400, 150, parede3);
             estruturar.verticaly(1050, 2220, 0, 260, 150, parede3);
@@ -338,9 +328,7 @@ namespace Casa
 
            
 
-            //estruturar.verticalx(1050, 2600, 0, -900, 150, Color.Blue);
-
-            //Parede Esquerda
+            //Parede Esquerda da casa
             estruturar.verticaly(150, 1190, 0, -690, 150, parede3);
             estruturar.verticaly(150, 1550, 0, -250, 150, parede3);
             estruturar.verticaly(150, 2290, 0, -490, 150, parede3);
@@ -418,20 +406,23 @@ namespace Casa
                    
             //CHAO
             estruturar.horizontal(150, 500, 0, 475, 500, chao);
-            estruturar.horizontal(150, 500, 150, 475, 500, telhado2);
             estruturar.horizontal(150, 800, 0, 900, 1800, chao);
-            estruturar.horizontal(150, 800, 152, 900, 1800, telhado2);
             estruturar.horizontal(0, 500, 0, 150, 2400, pedras2);
             estruturar.horizontal(1050, 800, 0, 150, 2100, pedras2);
             estruturar.horizontal(150, 2600, 0, 900, 300, pedras);
-
             estruturar.horizontal(0, 0, 0, 620, 500, grama);
             estruturar.horizontal(620, 0, 0, 580, 800, pedrisco);
-            estruturar.horizontal(620, 0, 152, 580, 800, telhado);
-            estruturar.horizontal(620, 580, 150, 430, 800, telhado2);
             estruturar.verticalx(620, 0, 0, 580, 150, portao);
+
+            //PAREDE PORTAO
             estruturar.verticalx(0, 0, 0, 650, 150, parede2);
             estruturar.verticaly(0, 0, 0, 650, 150, parede2);
+
+            //TELHADO
+            estruturar.horizontal(150, 500, 150, 475, 500, telhado2);           
+            estruturar.horizontal(620, 0, 152, 580, 800, telhado);
+            estruturar.horizontal(620, 580, 150, 430, 800, telhado2);
+            estruturar.horizontal(150, 800, 152, 900, 1800, telhado2);
 
           // estruturar.diagonalx(149, 500, 150, 250, 2100, 30, telhado2);
            //estruturar.diagonalx(600, 800, 150, 250, 1800, 250, telhado2);
