@@ -23,7 +23,23 @@ namespace Casa
         float camera_rotation = 0;                     //rotação no eixo Z
         float camera_rotation2 = 0;
         float valor = 0f;
-        int textParede;
+        int parede2;
+        int porta3;
+        int parede3;
+        int chao;
+        int pedras;
+        int pedras2;
+        int grama;
+        int pedrisco;
+        int porta;
+        int porta2;
+        int janela;
+        int telhado;
+        int portao;
+        int janela2;
+        int janela3;
+        int telhado2, telhado3, telhado4;
+        int forro;
 
 
         public Form1()
@@ -73,12 +89,6 @@ namespace Casa
             GL.ClearColor(Color.DarkBlue);         // definindo a cor de limpeza do fundo da tela
             GL.Enable(EnableCap.Light0);
 
-            textParede = LoadTexture("../../textura/fotografia.jpg"); /*
-            texPorta = LoadTexture("../../textura/porta.jpg");
-            texPiso = LoadTexture("../../textura/download.jpg");
-            texParede = LoadTexture("../../textura/wall1.jpg");
-            texParede2 = LoadTexture("../../textura/wall2.jpg");
-            texTelhado = LoadTexture("../../textura/telhado.jpg");*/
             SetupViewport();                      //configura a janela de pintura
 
         }
@@ -90,6 +100,26 @@ namespace Casa
 
             Matrix4 projection = Matrix4.CreatePerspectiveFieldOfView(1f, w / (float)h, 1f, 2000.0f);
             GL.LoadIdentity(); //zera a matriz de projecao com a matriz identidade
+            parede2 = LoadTexture("./Texturas/parede2.jpg");
+            parede3 = LoadTexture("./Texturas/parede3.jpg");
+            chao = LoadTexture("./Texturas/chao.jpg");
+            pedras = LoadTexture("./Texturas/pedras.jpg");
+            pedras2 = LoadTexture("./Texturas/pedras2.jpg");
+            grama = LoadTexture("./Texturas/grama.jpg");
+            pedrisco = LoadTexture("./Texturas/pedrisco.jpg");
+            porta = LoadTexture("./Texturas/porta.jpg");
+            porta2 = LoadTexture("./Texturas/porta2.jpg");
+            janela = LoadTexture("./Texturas/janela.jpg");
+            telhado = LoadTexture("./Texturas/telhado.png");
+            portao = LoadTexture("./Texturas/portao.jpg");
+            porta3 = LoadTexture("./Texturas/porta3.jpg");
+            janela2 = LoadTexture("./Texturas/janela2.jpg");
+            janela3 = LoadTexture("./Texturas/janela3.png");
+            telhado2 = LoadTexture("./Texturas/telhado2.jpg");
+            telhado3 = LoadTexture("./Texturas/telhado3.jpg");
+            telhado4 = LoadTexture("./Texturas/telhado4.jpg");
+            forro = LoadTexture("./Texturas/forro.jpg");
+
 
             GL.MatrixMode(MatrixMode.Projection);
             GL.LoadMatrix(ref projection);
@@ -110,14 +140,14 @@ namespace Casa
             GL.GenTextures(1, out id);
             GL.BindTexture(TextureTarget.Texture2D, id);
 
-            /*Bitmap bmp = new Bitmap(filename);
+            Bitmap bmp = new Bitmap(filename);
 
             BitmapData data = bmp.LockBits(new System.Drawing.Rectangle(0, 0, bmp.Width, bmp.Height),
-                ImageLockMode.ReadOnly, System.Drawing.Imaging.PixelFormat.Format32bppArgb);*/
+                ImageLockMode.ReadOnly, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
 
-           /* GL.TexImage2D(TextureTarget.Texture2D, 0, PixelInternalFormat.Rgba, data.Width, data.Height, 0,
-                OpenTK.Graphics.OpenGL.PixelFormat.Bgra, PixelType.UnsignedByte, data.Scan0);
-            bmp.UnlockBits(data);*/
+             GL.TexImage2D(TextureTarget.Texture2D, 0, PixelInternalFormat.Rgba, data.Width, data.Height, 0,
+                 OpenTK.Graphics.OpenGL.PixelFormat.Bgra, PixelType.UnsignedByte, data.Scan0);
+             bmp.UnlockBits(data);
 
             GL.TexParameter(TextureTarget.Texture2D, TextureParameterName.TextureMinFilter, (int)TextureMinFilter.Linear);
             GL.TexParameter(TextureTarget.Texture2D, TextureParameterName.TextureMagFilter, (int)TextureMagFilter.Linear);
@@ -266,121 +296,147 @@ namespace Casa
             //CONTORNO DA CASA
             //**********************************************************
             //PAREDES CORREDOR - VERTICAL
-            estruturar.verticaly(0, 2900, 0, -2400, 150, Color.Aqua); //ok
-            estruturar.verticaly(1200, 2900, 0, -2100, 150, Color.Aqua); //ok
+            estruturar.verticaly(0, 2900, 0, -2400, 150, parede2); //ok
+            estruturar.verticaly(1200, 2900, 0, -2100, 150, parede2); //ok
 
             //FECHAMENTO DA PAREDE DO CORREDOR/CASA - FUNDO - HORIZONTAL
-            estruturar.verticalx(1200, 2900, 0, -1200, 150, Color.DarkOliveGreen);
+            estruturar.verticalx(1200, 2900, 0, -1200, 150, parede2);
 
             //FRENTE DA CASA COM JANELA
-            estruturar.verticalx(150, 500, 0, 175, 150, Color.Purple); 
-            estruturar.verticalx(450, 500, 0, 175, 150, Color.Purple); 
-            estruturar.verticalx(300, 500, 120, 175, 30, Color.Purple); 
-            estruturar.verticalx(300, 500, 0, 175, 30, Color.Purple); 
-            estruturar.verticalx(325, 500, 30, 130, 90, Color.White); //JANELA
+            estruturar.verticalx(150, 500, 0, 175, 150, parede3); 
+            estruturar.verticalx(450, 500, 0, 175, 150, parede3); 
+            estruturar.verticalx(300, 500, 120, 175, 30, parede3); 
+            estruturar.verticalx(300, 500, 0, 175, 30, parede3); 
+            estruturar.verticalx(325, 500, 30, 130, 90, janela); //JANELA
+            estruturar.verticalx(0, 500, 0, 175, 150, parede2); 
  
             //**********************************************************
             
             
             
             //Parede Direita
-            estruturar.verticaly(1050, 800, 0, 730, 150, Color.Brown);
-            estruturar.verticaly(1050, 1670, 0, 400, 150, Color.Brown);
-            estruturar.verticaly(1050, 2220, 0, 260, 150, Color.Brown);
-            estruturar.verticaly(1050, 2560, 0, 40, 150, Color.Brown);
-            estruturar.verticaly(1050, 2460, 130, 100, 20, Color.Brown);
-            estruturar.verticaly(1050, 2460, 0, 100, 80, Color.Brown);
-            estruturar.verticaly(1050, 2060, 0, 180, 60, Color.Brown);
-            estruturar.verticaly(1050, 2060, 140, 180, 10, Color.Brown);
-            estruturar.verticaly(1050, 1490, 0, 180, 60, Color.Brown);
-            estruturar.verticaly(1050, 1490, 140, 180, 10, Color.Brown);
+            estruturar.verticaly(1050, 800, 0, 730, 150, parede3);
+            estruturar.verticaly(1050, 1670, 0, 400, 150, parede3);
+            estruturar.verticaly(1050, 2220, 0, 260, 150, parede3);
+            estruturar.verticaly(1050, 2560, 0, 40, 150, parede3);
+            estruturar.verticaly(1050, 2460, 130, 100, 20, parede3);
+            estruturar.verticaly(1050, 2480, 80, 80, 50, janela2);
+            estruturar.verticaly(1050, 2460, 0, 100, 80, parede3);
+            estruturar.verticaly(1050, 2060, 0, 180, 60, parede3);
+            estruturar.verticaly(1050, 2060, 140, 180, 10, parede3);
+            estruturar.verticaly(1050, 2070, 60, 150, 80, janela);
+            estruturar.verticaly(1050, 1490, 0, 180, 60, parede3);
+            estruturar.verticaly(1050, 1490, 140, 180, 10, parede3);
+            estruturar.verticaly(1050, 1530, 60, 140, 80, janela);
 
             //PAREDE FECHAMENTO DA CASA - SAÍDA PARA QUINTAL FUNDOS
-            estruturar.verticalx(1050, 2600, 0, -400, 150, Color.Blue);
-            estruturar.verticalx(470, 2600, 0, -320, 150, Color.Blue);
-            estruturar.verticalx(650, 2600, 0, -80, 150, Color.Blue);
-            estruturar.verticalx(570, 2600, 130, -100, 20, Color.Blue);
+            estruturar.verticalx(1050, 2600, 0, -400, 150, parede3);
+            estruturar.verticalx(490, 2600, 0, -340, 150, parede3);
+            estruturar.verticalx(650, 2600, 0, -80, 150, parede3);
+            estruturar.verticalx(570, 2600, 130, -100, 20, parede3);
+            estruturar.verticalx(570, 2600, 0, -80, 130, porta3);
 
            
 
             //estruturar.verticalx(1050, 2600, 0, -900, 150, Color.Blue);
 
             //Parede Esquerda
-            estruturar.verticaly(150, 1190, 0, -690, 150, Color.Lime);
-            estruturar.verticaly(150, 1550, 0, -250, 150, Color.Lime);
-            estruturar.verticaly(150, 2290, 0, -490, 150, Color.Lime);
-            estruturar.verticaly(150, 2600, 0, -200, 150, Color.Lime);
-            estruturar.verticaly(150, 1350, 0, -200, 80, Color.Lime);
-            estruturar.verticaly(150, 1350, 130, -200, 20, Color.Lime);
-            estruturar.verticaly(150, 1900, 130, -400, 20, Color.Lime);
-            estruturar.verticaly(150, 1900, 0, -400, 70, Color.Lime);
-            estruturar.verticaly(150, 2400, 0, -400, 70, Color.Lime);
-            estruturar.verticaly(150, 2400, 130, -400, 20, Color.Lime);
+            estruturar.verticaly(150, 1190, 0, -690, 150, parede3);
+            estruturar.verticaly(150, 1550, 0, -250, 150, parede3);
+            estruturar.verticaly(150, 2290, 0, -490, 150, parede3);
+            estruturar.verticaly(150, 2600, 0, -200, 150, parede3);
+            estruturar.verticaly(150, 1350, 0, -200, 80, parede3);
+            estruturar.verticaly(150, 1350, 130, -200, 20, parede3); //JANELA BANHEIRO
+            estruturar.verticaly(150, 1300, 80, -110, 50, janela2);
+            estruturar.verticaly(150, 1900, 130, -400, 20, parede3);
+            estruturar.verticaly(150, 1800, 60, -250, 80, janela);
+            estruturar.verticaly(150, 1900, 0, -400, 70, parede3);
+            estruturar.verticaly(150, 2400, 0, -400, 70, parede3);
+            estruturar.verticaly(150, 2400, 130, -400, 20, parede3); // JANELA COZINHA
+            estruturar.verticaly(150, 2400, 60, -110, 80, janela);
             
             //PAREDE COPA E COZINHA
-            estruturar.verticalx(150, 2100, 0, 350, 150, Color.Olive);
-            estruturar.verticalx(500, 2100, 130, 125, 20, Color.Olive);
-            estruturar.verticalx(590, 2100, 0, 35, 150, Color.Olive);
+            estruturar.verticalx(150, 2100, 0, 350, 150, parede3);
+            estruturar.verticalx(500, 2100, 130, 125, 20, parede3);
+            estruturar.verticalx(590, 2100, 0, 35, 150, parede3);
 
             
 
             //PAREDE QUARTO1 E SALA
-            estruturar.verticaly(625, 1200, 0, -700, 150, Color.Lime);
-            estruturar.verticalx(520, 1150, 0, -370, 150, Color.Blue);
-            estruturar.verticalx(625,1150, 0, -20, 150, Color.Blue);
-            estruturar.verticalx(610, 1150, 130, -110, 20, Color.Blue);
+            estruturar.verticaly(625, 800, 0, -300, 150, parede3);
+            estruturar.verticaly(625, 1200, 0, -500, 150, parede3);
+            estruturar.verticalx(520, 1150, 0, -370, 150, parede3);
+            estruturar.verticalx(625,1150, 0, -20, 150, parede3);
+            estruturar.verticalx(610, 1150, 130, -110, 20, parede3);
+            estruturar.verticalx(605, 1150, 0, -110, 130, porta3);
 
             //PAREDE CORREDOR DO QUARTO2 E SUÍTE
-            estruturar.verticaly(625, 2600, 0, -1100, 150, Color.Lime);
-            estruturar.verticaly(625, 1500, 130, -1000, 20, Color.Lime);
-            estruturar.verticaly(625, 1405, 0, -110, 150, Color.Lime);
-            estruturar.verticaly(730, 1770, 0, -420, 150, Color.Lime);
-            estruturar.verticaly(730, 1880, 0, -20, 150, Color.Lime);
-            estruturar.verticaly(730, 1870, 130, -100, 20, Color.Lime);
-            estruturar.verticalx(720, 1880, 0, 330, 150, Color.Black);//PORTA
-            estruturar.verticalx(630, 1880, 130, 100, 20, Color.Black);
-            estruturar.verticalx(625, 1880, 0, 20, 150, Color.Black);
+            estruturar.verticaly(625, 2600, 0, -1100, 150, parede3);
+            estruturar.verticaly(625, 1500, 130, -1000, 20, parede3);
+            estruturar.verticaly(625, 1405, 0, -110, 150, parede3);
+            estruturar.verticaly(730, 1770, 0, -420, 150, parede3);
+            estruturar.verticaly(730, 1880, 0, -20, 150, parede3);
+            estruturar.verticaly(730, 1870, 130, -100, 20, parede3);
+            estruturar.verticaly(730, 1860, 0, -90, 130, porta3);
+            estruturar.verticalx(720, 1880, 0, 330, 150, parede3);//PORTA
+            estruturar.verticalx(630, 1880, 130, 100, 20, parede3);
+            estruturar.verticalx(645, 1880, 0, 75, 130, porta3);
+            estruturar.verticalx(625, 1880, 0, 20, 150, parede3);
 
             //PAREDE DA SALA C/ PORTA
-            estruturar.verticalx(590, 1340, 0, 35, 150, Color.Olive);
-            estruturar.verticalx(500, 1340, 0, 20, 150, Color.Olive);
-            estruturar.verticalx(500, 1340, 130, 90, 20, Color.Olive);
-            estruturar.verticalx(750, 800, 0, 300, 150, Color.Olive); 
-            estruturar.verticalx(625, 800, 0, 30, 150, Color.Olive); 
-            estruturar.verticalx(650, 800, 130, 120, 20, Color.Olive); 
-            estruturar.verticalx(655, 800, 0, 95, 130, Color.White);//PORTA
+            estruturar.verticalx(590, 1340, 0, 35, 150, parede3);
+            estruturar.verticalx(500, 1340, 0, 20, 150, parede3);
+            estruturar.verticalx(500, 1340, 130, 90, 20, parede3);
+            estruturar.verticalx(750, 800, 0, 300, 150, parede3); 
+            estruturar.verticalx(625, 800, 0, 30, 150, parede3); 
+            estruturar.verticalx(650, 800, 130, 120, 20, parede3); 
+            estruturar.verticalx(655, 800, 0, 95, 130, porta);//PORTA
 
             //PAREDE QUARTO2 E SALA
-            estruturar.verticalx(625, 1350, 0, 425, 150, Color.Olive); 
+            estruturar.verticalx(625, 1350, 0, 425, 150, parede3); 
 
             //PAREDE SUÍTE E BANHEIRO 
-            estruturar.verticalx(710, 2450, 0, 335, 150, Color.Olive);
-            estruturar.verticalx(625, 2450, 130, 100, 20, Color.Olive);
-            estruturar.verticalx(625, 2450, 0, 10, 150, Color.Olive);
+            estruturar.verticalx(710, 2450, 0, 335, 150, parede3);
+            estruturar.verticalx(625, 2450, 130, 80, 20, parede3);
+            estruturar.verticalx(635, 2450, 0, 80, 130, porta3);
+            estruturar.verticalx(625, 2450, 0, 10, 150, parede3);
 
             //PAREDE C/ PORTA CORREDOR DIREITO
-            estruturar.verticalx(1050, 800, 0, 30, 150, Color.DarkViolet);
-            estruturar.verticalx(1170, 800, 0, 30, 150, Color.DarkViolet);
-            estruturar.verticalx(1080, 800, 0, 90, 130, Color.White);//PORTA
-            estruturar.verticalx(1080, 800, 130, 120, 20, Color.DarkViolet);
+            estruturar.verticalx(1050, 800, 0, 30, 150, parede2);
+            estruturar.verticalx(1170, 800, 0, 30, 150, parede2);
+            estruturar.verticalx(1080, 800, 0, 90, 130, porta2);//PORTA
+            estruturar.verticalx(1080, 800, 130, 120, 20, parede2);
 
             //PAREDE BANHEIRO AO LADO DA COPA
-            estruturar.verticalx(150, 1340, 0, 350, 150, Color.Olive);
-            estruturar.verticaly(500, 1340, 0, -70, 150, Color.Black);
-            estruturar.verticaly(500, 1210, 0, -60, 150, Color.Black);
-            estruturar.verticaly(500, 1300, 120, -100, 30, Color.Black);
+            estruturar.verticalx(150, 1340, 0, 350, 150, parede3);
+            estruturar.verticaly(500, 1340, 0, -70, 150, parede3);
+            estruturar.verticaly(500, 1210, 0, -60, 150, parede3);
+            estruturar.verticaly(500, 1270, 0, -60, 130, porta3);
+            estruturar.verticaly(500, 1300, 120, -100, 30, parede3);
 
 
                    
             //CHAO
-            estruturar.horizontal(150, 500, 0, 480, 500, Color.Gray);
-            estruturar.horizontal(150, 800, 0, 900, 1800, Color.Gray);
-            estruturar.horizontal(0, 500, 0, 150, 2400, Color.FloralWhite);
-            estruturar.horizontal(1050, 800, 0, 150, 2100, Color.FloralWhite);
-            estruturar.horizontal(150, 2600, 0, 900, 300, Color.FloralWhite);
+            estruturar.horizontal(150, 500, 0, 475, 500, chao);
+            estruturar.horizontal(150, 500, 150, 475, 500, telhado2);
+            estruturar.horizontal(150, 800, 0, 900, 1800, chao);
+            estruturar.horizontal(150, 800, 152, 900, 1800, telhado2);
+            estruturar.horizontal(0, 500, 0, 150, 2400, pedras2);
+            estruturar.horizontal(1050, 800, 0, 150, 2100, pedras2);
+            estruturar.horizontal(150, 2600, 0, 900, 300, pedras);
 
-            estruturar.horizontal(0, 0, 0, 620, 500, Color.Green);
-            estruturar.horizontal(620, 0, 0, 580, 800, Color.Gray);
+            estruturar.horizontal(0, 0, 0, 620, 500, grama);
+            estruturar.horizontal(620, 0, 0, 580, 800, pedrisco);
+            estruturar.horizontal(620, 0, 152, 580, 800, telhado);
+            estruturar.horizontal(620, 580, 150, 430, 800, telhado2);
+            estruturar.verticalx(620, 0, 0, 580, 150, portao);
+            estruturar.verticalx(0, 0, 0, 650, 150, parede2);
+            estruturar.verticaly(0, 0, 0, 650, 150, parede2);
+
+          // estruturar.diagonalx(149, 500, 150, 250, 2100, 30, telhado2);
+           //estruturar.diagonalx(600, 800, 150, 250, 1800, 250, telhado2);
+
+            //estruturar.verticalx(0, 0, 0, 350, 1050, parede);
             
         
         }
